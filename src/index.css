@@ -1,2 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-serif: 'Libre Baskerville', serif;
+    --font-script: 'Great Vibes', cursive;
+}
+
 :root {
+    --color-gold: #D4B58C;
+    --color-blue: #4F628D;
+    --color-white: #FFFFFF;
+
+    font-family: 'Libre Baskerville', serif;
+    color: var(--color-blue);
+}
+
+.page-header {
+    width: 100%;
+    padding: 16px 24px;
+    text-align: center;
+    background: var(--color-white);
+    color: var(--color-gold);
+    border-bottom: 2px solid var(--color-gold);
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
 }
