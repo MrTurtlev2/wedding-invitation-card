@@ -24,6 +24,16 @@ function App() {
                 <InfoTile type='sleeping'/>
                 <InfoTile type='plan'/>
             </section>
+            <section>
+                <h2 className='text-center'>PREZENTY</h2>
+                <DecorativeSeparator/>
+                <p className='text-center'>Największym prezentem będzie dla nas Wasza obecność.
+                    Nie oczekujemy prezentów, kwiatów ani innych upominków. Sam fakt, że poświęcicie swój czas, aby
+                    spędzić z nami te wyjątkowe dni nad jeziorem Como, znaczy dla nas więcej niż jakikolwiek
+                    podarunek.</p>
+
+                <p className='text-center'>Dziękujemy, że będziecie z nami!</p>
+            </section>
         </div>
     )
 }

@@ -1,10 +1,20 @@
 import * as React from "react";
+import {useEffect, useState} from "react";
 import './MainClock.css'
 import {getTimeRemaining} from "../../utils/timeUtil.ts";
 
 const MainClock: React.FC = () => {
+    const targetDate = new Date(2027, 8, 5)
 
-    const {days, hours, minutes, seconds} = getTimeRemaining(1, 4, 2027)
+    const [time, setTime] = useState(() => getTimeRemaining(targetDate))
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTime(getTimeRemaining(targetDate))
+        }, 1000)
+
+        return () => clearInterval(interval)
+    }, [])
 
     return (
         <div className='main-wrapper'>
@@ -15,23 +25,23 @@ const MainClock: React.FC = () => {
             </div>
             <div className='date-wrapper'>
                 <div className='date-cell'>
-                    <p className='text-2xl'>{days}</p>
+                    <p className='text-2xl'>{time.days}</p>
                     <p className='text-base'>DNI</p>
                 </div>
                 <div className='date-separator'/>
                 <div className='date-cell'>
-                    <p className='text-2xl'>{hours}</p>
+                    <p className='text-2xl'>{time.hours}</p>
                     <p className='text-base'>GODZIN</p>
                 </div>
                 <div className='date-separator'/>
 
                 <div className='date-cell'>
-                    <p className='text-2xl'>{minutes}</p>
+                    <p className='text-2xl'>{time.minutes}</p>
                     <p className='text-base'>MINUT</p>
                 </div>
                 <div className='date-separator'/>
                 <div className='date-cell'>
-                    <p className='text-2xl'>{seconds}</p>
+                    <p className='text-2xl'>{time.seconds}</p>
                     <p className='text-base'>SEKUND</p>
                 </div>
             </div>
