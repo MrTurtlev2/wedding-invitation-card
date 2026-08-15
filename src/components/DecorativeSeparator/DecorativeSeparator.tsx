@@ -1,13 +1,15 @@
 import {Heart} from "lucide-react";
 import {Colors} from "../../constants/colors.ts";
+import './DecorativeSeparator.css'
 
 const DecorativeSeparator = () => {
     return (
-        <div className="flex flex-row">
-            <div className="w-42 h-0.5 bg-(--color-gold)"/>
-            <Heart className="mx-8" color={Colors.gold} fill={Colors.gold}/>
-            <div className="w-42 h-1"/>
+        <div className="separator-wrapper">
+            <div className="line"/>
+            <Heart className="mx-3" color={Colors.gold} fill={Colors.gold}/>
+            <div className="line"/>
         </div>
     )
 }
 export default DecorativeSeparator;
+

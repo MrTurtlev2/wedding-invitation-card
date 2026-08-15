@@ -1,0 +1,55 @@
+
+.main-wrapper {
+    background-image: url('../../assets/bg/main-mobile-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    color: var(--color-white);
+}
+
+.main-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.paragraph1 {
+    font-size: 36px;
+}
+
+.paragraph2 {
+    font-size: 24px;
+}
+
+.paragraph3 {
+    font-size: 16px;
+}
+
+.date-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.date-separator {
+    width: 1px;
+    min-width: 1px;
+    flex-shrink: 0;
+    margin: 10px 0;
+    background-color: var(--color-gold);
+}
+
+.date-cell {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
