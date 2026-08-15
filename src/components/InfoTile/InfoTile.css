@@ -9,3 +9,36 @@
 .info-main-wrapper:not(:last-of-type) {
     margin-bottom: 10px;
 }
+
+.info-content-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-content-wrapper h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info-content-wrapper p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.button-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: var(--color-green);
+    padding: 5px;
+    max-width: 150px;
+}
+
+.button-text {
+    text-transform: uppercase;
+    color: var(--color-gold);
+    font-size: 12px;
+}
