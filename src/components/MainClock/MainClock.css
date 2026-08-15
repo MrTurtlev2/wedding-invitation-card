@@ -48,8 +48,46 @@
 }
 
 .date-cell {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.number-wrapper {
+    display: inline-grid;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.number {
+    grid-area: 1 / 1;
+    display: block;
+}
+
+.number-old {
+    animation: number-old 400ms ease-in-out forwards;
+}
+
+.number-new {
+    animation: number-new 400ms ease-in-out forwards;
+}
+
+@keyframes number-old {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes number-new {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
