@@ -3,7 +3,7 @@ import InfoTileButton from "./InfoTileButton.tsx";
 
 const SleepingContent = () => {
 
-    const ceremonyLink = "https://www.google.com/maps/search/?api=1&query=Rynek+Główny+1,+Kraków"
+    const ceremonyLink = "https://maps.app.goo.gl/mME8VVgWTKLqkYZg7?g_st=ac"
 
     return (
         <div className='info-content-wrapper'>

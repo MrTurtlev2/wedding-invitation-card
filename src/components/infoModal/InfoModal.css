@@ -1,0 +1,64 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+
+    background: rgba(97, 118, 83, 0.9);
+
+    animation: modal-fade-in 350ms ease-out;
+}
+
+.modal-panel {
+    width: min(100%, 500px);
+    max-height: calc(100dvh - 48px);
+    overflow-y: auto;
+    padding: 32px;
+    background: var(--color-white);
+    animation: modal-slide-in 350ms ease-out;
+    border: 1px solid var(--color-gold);
+}
+
+.modal-panel h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-modal-content {
+}
+
+.info-modal-content h3 {
+    margin-top: 20px;
+}
+
+@keyframes modal-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modal-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
