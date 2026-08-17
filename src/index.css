@@ -1,5 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap');*/
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('/assets/fonts/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('/assets/fonts/LibreBaskerville-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 @theme {
     --font-serif: 'Libre Baskerville', serif;

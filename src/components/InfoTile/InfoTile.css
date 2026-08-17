@@ -40,6 +40,7 @@
     background-color: var(--color-green);
     padding: 5px;
     width: 100%;
+    max-width: 200px;
 }
 
 .button-text {
