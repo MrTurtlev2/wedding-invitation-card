@@ -4,6 +4,7 @@ import MainClock from "./components/MainClock/MainClock.tsx";
 import InfoTile from "./components/InfoTile/InfoTile.tsx";
 import {ModalProvider} from "./context/PlanInfoModalContext.tsx";
 import InfoModal from "./components/infoModal/InfoModal.tsx";
+import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
 
@@ -37,6 +38,9 @@ function App() {
                         podarunek.</p>
 
                     <p className='text-center'>Dziękujemy, że będziecie z nami!</p>
+                </section>
+                <section className='footer-section'>
+                    <Footer/>
                 </section>
             </div>
             <InfoModal/>
