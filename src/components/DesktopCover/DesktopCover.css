@@ -1,0 +1,78 @@
+.device-blocker {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100dvh;
+    padding: 32px;
+
+    background: var(--color-white);
+}
+
+.device-blocker-content {
+    width: min(100%, 460px);
+
+    padding: 48px 32px;
+
+    text-align: center;
+
+    border: 1px solid var(--color-gold);
+    background: var(--color-white);
+
+    box-shadow: 0 12px 40px rgba(79, 98, 141, 0.08);
+}
+
+.device-blocker-heart {
+    margin-bottom: 16px;
+
+    color: var(--color-gold);
+    font-size: 42px;
+    line-height: 1;
+}
+
+.device-blocker-title {
+    margin: 0;
+
+    color: var(--color-gold);
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.device-blocker-line {
+    width: 60px;
+    height: 1px;
+    margin: 24px auto;
+    background: var(--color-gold);
+}
+
+.device-blocker-text {
+    margin: 0;
+
+    color: var(--color-blue);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.device-blocker-hint {
+    margin: 24px 0 0;
+
+    color: var(--color-blue);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.lottie-anim {
+    width: 100%;
+    height: 180px;
+    margin-top: 24px;
+    z-index: 99999999999999999;
+}

@@ -1,0 +1,36 @@
+.footer-main {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.footer-images {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img {
+    height: 120px;
+}
+
+.footer-img:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.footer-title-wrapper {
+    width: 100%;
+    padding: 0 24px;
+    background: var(--color-white);
+    background-color: rgba(97, 118, 83, 0.9);
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-title {
+    text-align: center;
+    color: var(--color-gold);
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    margin-top: 5px;
+}

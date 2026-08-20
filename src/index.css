@@ -18,8 +18,8 @@
 }
 
 @theme {
-    --font-serif: 'Libre Baskerville', serif;
-    --font-script: 'Great Vibes', cursive;
+    --font-libre: 'Libre Baskerville', serif;
+    --font-vibes: 'Great Vibes', cursive;
 }
 
 :root {
