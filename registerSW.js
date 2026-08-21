@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/wedding-invitation-card/sw.js', { scope: '/wedding-invitation-card/' })})}
