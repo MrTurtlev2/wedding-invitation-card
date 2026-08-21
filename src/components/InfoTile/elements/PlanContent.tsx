@@ -8,9 +8,10 @@ const PlanContent = () => {
     return (
         <>
             <div className='info-content-wrapper'>
-                <h3>PLAN WYJAZDU</h3>
+                <h3 className='mb-2'>PLAN WYJAZDU</h3>
                 <p>4-7 SIERPIEŃ 2027</p>
-                <p>Sprawdźcie plan naszego wspólngo wyjazdu pełnego atrakcji, pysznego jedzenia i niezapomnianych
+                <p className='mb-2'>Sprawdźcie plan naszego wspólngo wyjazdu pełnego atrakcji, pysznego jedzenia i
+                    niezapomnianych
                     chwil.</p>
                 <InfoTileButton text='ZOBACZ PLAN' onClick={openModal}/>
             </div>

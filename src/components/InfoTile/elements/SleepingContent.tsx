@@ -7,9 +7,9 @@ const SleepingContent = () => {
 
     return (
         <div className='info-content-wrapper'>
-            <h3>NOCLEGI</h3>
+            <h3 className='mb-2'>NOCLEGI</h3>
             <p>Maioliche Apartments<br/>Griante</p>
-            <p>
+            <p className='mb-2'>
                 Via Regina 47,<br/>
                 22011 Griante-Cadenabbia
             </p>

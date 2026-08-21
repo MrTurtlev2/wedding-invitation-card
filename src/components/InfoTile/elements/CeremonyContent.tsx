@@ -7,10 +7,10 @@ const CeremonyContent = () => {
 
     return (
         <div className='info-content-wrapper'>
-            <h3 className=''>CEREMONIA</h3>
-            <p>5 sierpnia 2027</p>
+            <h3 className='mb-2'>CEREMONIA</h3>
+            <p className=''>5 sierpnia 2027</p>
             <p>PALAZZO GALLIO</p>
-            <p>Gravedona</p>
+            <p className='mb-2'>Gravedona</p>
             <InfoTileButton text='mapa' link={ceremonyLink}/>
         </div>
     )

@@ -27,8 +27,8 @@ const InfoTile = ({type}: InfoTileProps) => {
 
     return (
         <div className='info-main-wrapper'>
-            <img src={images[type]} alt={''} style={{width: '25%'}}/>
-            <img src={icons[type]} alt={''} style={{margin: '0 20px'}}/>
+            <img src={images[type]} alt={''} style={{width: '30%', objectFit: 'contain'}}/>
+            <img src={icons[type]} alt={''} style={{margin: '0 10px'}}/>
             {type === 'ceremony' && <CeremonyContent/>}
             {type === 'sleeping' && <SleepingContent/>}
             {type === 'plan' && <PlanContent/>}
