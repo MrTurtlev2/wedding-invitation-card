@@ -40,7 +40,7 @@ function App() {
                             spędzić z nami te wyjątkowe dni nad jeziorem Como, znaczy dla nas więcej niż jakikolwiek
                             podarunek.</p>
 
-                        <p className='text-center mt-10 font-vibes text-xl'>Dziękujemy, że będziecie z nami!</p>
+                        <p className='text-center mt-10 font-vibes text-2xl'>Dziękujemy, że będziecie z nami!</p>
                     </section>
                     <section className='footer-section'>
                         <Footer/>

@@ -1,7 +1,7 @@
 import type {ReactNode} from "react";
-import DesktopLottieCover from '../../assets/lottie/test.json'
+import DesktopLottieCover from '../../assets/lottie/weddingoutline.json'
 import './DesktopCover.css'
-import {Lottie} from "lottie-react";
+import {Player} from "@lottiefiles/react-lottie-player";
 
 const DesktopCover = ({children}: { children: ReactNode }) => {
     const isMobile =
@@ -21,18 +21,18 @@ const DesktopCover = ({children}: { children: ReactNode }) => {
 
                     <p className="device-blocker-text">
                         Nasza strona została przygotowana z myślą
-                        o telefonach.
+                        o telefonach. <span className='text-xs'>(i nie miałem czasu robić desktopu)</span>
                     </p>
 
                     <p className="device-blocker-hint">
                         Otwórzcie ją proszę na swoim telefonie 🤍
                     </p>
                     <div>
-                        <Lottie
-                            src={DesktopLottieCover}
-                            loop
-                            autoplay
-                        />
+                        <Player speed={0.7}
+                                autoplay
+                                loop
+                                src={DesktopLottieCover}
+                                style={{height: '300px', width: '300px'}}/>
                     </div>
                 </div>
             </div>
