@@ -11,6 +11,18 @@
     margin-bottom: 10px;
 }
 
+.info-tile-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.info-tile-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .info-content-wrapper {
     text-align: center;
     display: flex;
